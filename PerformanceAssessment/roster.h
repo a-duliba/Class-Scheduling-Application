@@ -1,8 +1,7 @@
 #pragma once
 #ifndef ROSTER_H
 #define ROSTER_H	//Include Headers
-#include "student.h";//Allows the use of Student methods
-#include "main.cpp"
+#include "student.h"//Allows the use of Student methods
 using namespace std;
 
 class Roster		//Create Class Roster
@@ -30,4 +29,4 @@ public:
 	void printByDegreeProgram(DegreeProgram degreeProgram); //Print By Degree Program
 		~Roster(); //Deconstructor
 };
-#endif
+#endif // !ROSTER_H

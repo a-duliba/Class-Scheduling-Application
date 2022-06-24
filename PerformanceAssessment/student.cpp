@@ -3,10 +3,6 @@
 
 #include <iostream>
 //USE COUT and CIN
-
-#include <string>
-#include <cstring>
-
 using namespace std;
 
 Student::Student() {} 
@@ -39,10 +35,10 @@ Student::Student(
 void Student::print()
 {
 	cout << studentID << endl; //Student ID
-	cout << "First Name: " << FirstName << endl; //Student First Name
-	cout << "Last Name: " << LastName << endl; //Student Last Name
-	cout << "EmailAddress: " << EmailAddress << endl; //Student Email
-	cout << "Age: " << Age << endl; //Student Age
+	cout << "First Name: " << firstName << endl; //Student First Name
+	cout << "Last Name: " << lastName << endl; //Student Last Name
+	cout << "EmailAddress: " << emailAddress << endl; //Student Email
+	cout << "Age: " << age << endl; //Student Age
 	cout << "daysInCourse: " << numDays[0] << ", " << numDays[1] << ", " << numDays[2] << endl; // displays days in course display 3 days
 	cout << "Degree Program: " << degree << endl; //Student Degree
 	cout << endl; //Space between students.
@@ -52,9 +48,9 @@ void Student::print()
 //-------------------Accessors and Mutators--------------------------
 
 //Student ID Mutator and Accessor 
-void Student::setStudentID(string studentID)
+void Student::setStudentID(string ID)
 {
-	studentID = studentID;
+	studentID = ID;
 }
 //End Student::setStudentID
 string Student::getStudentID()
@@ -124,3 +120,15 @@ int* Student::getNumDays()
 {
 	return numDays;
 }
+//End Student::getNumDays
+
+//Student DegreeProgram Mutator and Accessor
+void Student::setDegreeProgram(DegreeProgram StudentDegree)
+{
+	degree = StudentDegree;
+}//End Student::setDegree
+DegreeProgram Student::getDegreeProgram()
+{
+	return degree;
+}//End Student::getDegreeProgram
+Student::~Student() {}//Deconstructor

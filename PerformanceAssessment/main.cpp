@@ -2,10 +2,10 @@
 //
 
 #include <sstream>
-#include <cstring>	//email character checking function
-#include <string>	//Use string operations
-#include <iostream>	//Use COUT CIN 
-#include "roster.h"	//Include headers
+#include <cstring>		//email character checking function
+#include <string>		//Use string operations
+#include <iostream>		//Use COUT CIN 
+#include "roster.h"		//Include headers
 #include "student.h"
 #include "degree.h"
 
@@ -21,10 +21,10 @@ int main()
 	"A4,Erin,Black,Erin.black@comcast.net,22,50,58,40,SECURITY",
 	"A5,Andrew,Duliba,aduliba@my.wgu.edu,25,20,30,40,SOFTWARE"
 	};
+
 	//create a instance of Roster
 	Roster classRoster;
 	//create a instance of DegreeProgram
-	class DegreeProgram;
 	DegreeProgram myDegree{};
 	//Add each student to class roster from studentData
 	for (int i = 0; i < 5; i++)
@@ -81,9 +81,9 @@ int main()
 	}
 	cout << endl;								//Print new line
 	classRoster.printByDegreeProgram(SOFTWARE); //Call the method printByDegreeProgram
-	classRoster.remove("A3");			//Call the method remove
+	classRoster.remove("A3");					//Call the method remove
 	classRoster.printAll();						//Call the method printAll
-	classRoster.remove("A3");			//Call the method remove
+	classRoster.remove("A3");					//Call the method remove
 	classRoster.~Roster();						//Call the deconstructor
 
 	return 0;

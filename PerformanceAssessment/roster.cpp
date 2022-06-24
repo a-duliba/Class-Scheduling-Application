@@ -100,7 +100,7 @@ void Roster::printInvalidEmails()
 		string email = classRosterArray[i]->getEmail();
 		//Set email to the array position[i]->getEmail()
 		//Reset booleans
-			at = false;
+		at = false;
 		space = false;
 		period = false;
 		//Check for certain characters in the string
